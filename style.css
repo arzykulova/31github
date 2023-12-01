@@ -1,0 +1,57 @@
+.container{
+	max width: 80%;
+	margin:0 auto;
+	background: #333;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 20px;
+	margin-top: 10%;
+}
+div{
+	background: #fff;
+	padding: 20px;
+	text-align: center;
+	}
+	i{
+		font-size: 4em;
+		color:#333;
+		padding: 20px;
+
+	}
+	#sam{
+		animation-name: spin;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+
+
+	}
+	#second div{
+		background: #E41C5C;
+		transition: background 3s;
+
+	}
+	#second-ic:hover {
+	color:#8eda71;
+		transform: rotate(360deg);
+		transition:transform 2s, color 1s; 
+	}
+
+	#third24:hover{
+	background-color: #fea79e;
+	transition-duration: 2s;
+
+	}
+	#third23{
+	
+	animation: spin;
+	animation-duration: 2s;
+	transform: rotate(360deg);
+}
+	@keyframes spin{
+		from{
+			transform: rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg);
+		}
+	}
